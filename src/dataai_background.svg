@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f7f7ff"/>
+    <stop offset=".55" stop-color="#fbfaf8"/>
+    <stop offset="1" stop-color="#effbf8"/>
+  </linearGradient>
+  <linearGradient id="arch" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#dfe4ff" stop-opacity=".78"/>
+    <stop offset="1" stop-color="#ccece7" stop-opacity=".55"/>
+  </linearGradient>
+  <radialGradient id="orb">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#e8e5f2"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="34"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<ellipse cx="180" cy="130" rx="260" ry="190" fill="#dfe5ff" opacity=".45" filter="url(#blur)"/>
+<ellipse cx="1450" cy="180" rx="250" ry="200" fill="#d7f5ed" opacity=".55" filter="url(#blur)"/>
+<path d="M0 1000V700C0 420 210 210 490 210S980 420 980 700V1000Z" fill="url(#arch)" opacity=".62"/>
+<path d="M95 1000V720C95 505 255 345 490 345S885 505 885 720V1000Z" fill="#fbfaf8" opacity=".9"/>
+<path d="M1020 1000V550C1020 300 1200 120 1390 120S1760 300 1760 550V1000Z" fill="#e5e8fb" opacity=".58"/>
+<path d="M1115 1000V570C1115 390 1235 270 1390 270S1665 390 1665 570V1000Z" fill="#fbfaf8" opacity=".86"/>
+<circle cx="150" cy="815" r="82" fill="url(#orb)" opacity=".9"/>
+<circle cx="150" cy="815" r="81" fill="none" stroke="#ffffff" stroke-width="2" opacity=".8"/>
+<path d="M0 730C120 780 170 870 205 1000" fill="none" stroke="#ef9a9b" stroke-width="3" opacity=".65"/>
+<path d="M1220 850C1320 760 1460 770 1600 680" fill="none" stroke="#b8c5ff" stroke-width="2" opacity=".65"/>
+<path d="M0 180C300 100 500 130 730 220" fill="none" stroke="#ffffff" stroke-width="2" opacity=".65"/>
+</svg>

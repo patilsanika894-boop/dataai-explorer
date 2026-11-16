@@ -1,0 +1,10 @@
+.env
+data/ecommerce.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+*.backup
+*_backup_*.py

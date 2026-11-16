@@ -1,0 +1,7 @@
+# Core (free demo mode; the database is plain SQLite from the standard library)
+streamlit>=1.36
+python-dotenv>=1.0
+
+# Optional: only needed to ask your own questions (natural language -> SQL via an LLM)
+langchain-core>=0.3
+langchain-openai>=0.2

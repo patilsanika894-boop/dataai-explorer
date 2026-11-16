@@ -1,0 +1,47 @@
+
+[
+  {
+    "question": "How many customers are there?",
+    "sql": "SELECT COUNT(*) AS customers FROM customers"
+  },
+  {
+    "question": "List the customers based in Australia and their city.",
+    "sql": "SELECT name, city FROM customers WHERE country = 'Australia' ORDER BY name"
+  },
+  {
+    "question": "Which 5 products earned the most revenue?",
+    "sql": "SELECT p.name, SUM(oi.quantity * p.price) AS revenue FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY revenue DESC LIMIT 5"
+  },
+  {
+    "question": "What is the total revenue by product category?",
+    "sql": "SELECT p.category, SUM(oi.quantity * p.price) AS revenue FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.category ORDER BY revenue DESC"
+  },
+  {
+    "question": "How many orders are there for each status?",
+    "sql": "SELECT status, COUNT(*) AS orders FROM orders GROUP BY status ORDER BY orders DESC"
+  },
+  {
+    "question": "Who are the top 3 customers by total spend?",
+    "sql": "SELECT c.name, SUM(oi.quantity * p.price) AS spend FROM orders o JOIN order_items oi ON oi.order_id = o.id JOIN products p ON p.id = oi.product_id JOIN customers c ON c.id = o.customer_id GROUP BY c.id ORDER BY spend DESC LIMIT 3"
+  },
+  {
+    "question": "Show the student with the highest marks.",
+    "sql": "SELECT * FROM students WHERE marks = (SELECT MAX(marks) FROM students)"
+  },
+  {
+    "question": "Show all students who scored more than 80 marks.",
+    "sql": "SELECT * FROM students WHERE marks > 80"
+  },
+  {
+    "question": "List students in descending order of marks.",
+    "sql": "SELECT * FROM students ORDER BY marks DESC"
+  },
+  {
+    "question": "What is the average marks of students?",
+    "sql": "SELECT AVG(marks) AS average_marks FROM students"
+  },
+  {
+    "question": "How many students are there?",
+    "sql": "SELECT COUNT(*) AS total_students FROM students"
+  }
+]
